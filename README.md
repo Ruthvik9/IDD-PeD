@@ -2,7 +2,7 @@
 
 ## Dataset Setup
 
-1. Place the video files and corresponding annotation files in the `data/IDDPedestrian/videos` folder
+1. Place the video files in the `data/IDDPedestrian/videos` folder
 2. The videos are present at the `/mnt/base/dpji/IDDPedestrian/videos/` folder on 10.4.16.30.
 3. Remove audio from the videos using 'bash remove_audio.sh'
 ```bash
