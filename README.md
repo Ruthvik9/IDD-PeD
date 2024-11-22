@@ -31,7 +31,7 @@ conda activate baseline
 Run the following script to train and test the intention prediction model:
 ```bash
 cd Intention
-bash run_all_on_iddp.sh
+bash run_all_on_iddped.sh
 ```
 
 ## Trajectory Prediction
@@ -46,26 +46,26 @@ conda activate piepred
 2. Run prediction:
 ```bash
 cd PIEPredict
-python train_pie_predict.py --config configs/default.yaml
+python train_test.py 2
 ```
 
 ### MTN (Multiple Trajectory Network)
 1. Setup environment:
 ```bash
-conda env create -f mtn_env.yml
+conda env create -f envs/mtn_config.yml
 conda activate mtn
 ```
 
 2. Run prediction:
 ```bash
 cd MTN
-python train_mtn.py --dataset iddped --mode train
+python train.py
 ```
 
 ### BiTraP
 1. Setup environment:
 ```bash
-conda env create -f bitrap_env.yml
+conda env create -f envs/bitrap_config.yml
 conda activate bitrap
 ```
 
@@ -78,14 +78,13 @@ python main.py --config configs/iddped_config.yaml
 ### SGNet
 1. Setup environment:
 ```bash
-conda env create -f sgnet_env.yml
-conda activate sgnet
+conda env create -f envs/sgnet_config.yml
+conda activate SGNet
 ```
 
 2. Run prediction:
 ```bash
 cd SGNet
-python train_sgnet.py --data_path data/iddped --batch_size 32
 ```
 
 ## Citation
