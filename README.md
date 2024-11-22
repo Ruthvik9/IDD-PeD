@@ -2,27 +2,34 @@
 
 ## Dataset Setup
 
-1. Place the video files and corresponding annotation files in the `data` folder
-2. Run the following code to extract frames from videos:
+1. Place the video files and corresponding annotation files in the `data/IDDPedestrian/videos` folder
+2. Remove audio from the videos using 'bash remove_audio.sh'
+```bash
+cd data/IDDPedestrian/
+bash remove_audio.sh
+```
+4. From the root directory, run the following code to extract frames from videos:
 
 ```python
 from iddped_interface import iddped
 dataset = iddped()
 dataset.extract_and_save_images()
 ```
+5. This will extract and save frames as .png images in the `data/IDDPedestrian/images` directory
 
 ## Intention Prediction
 
 ### Setup
 1. Create the conda environment using the provided configuration file:
 ```bash
-conda env create -f intention_pred_env.yml
-conda activate intention_pred
+conda env create -f envs/intention_config.yml
+conda activate baseline
 ```
 
 ### Training and Testing
 Run the following script to train and test the intention prediction model:
 ```bash
+cd Intention
 bash run_all_on_iddp.sh
 ```
 
@@ -31,7 +38,7 @@ bash run_all_on_iddp.sh
 ### PIEPredict
 1. Setup environment:
 ```bash
-conda env create -f piepred_env.yml
+conda env create -f envs/piepred_env.yml
 conda activate piepred
 ```
 
