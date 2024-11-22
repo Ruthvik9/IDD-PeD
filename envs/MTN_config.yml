@@ -1,0 +1,37 @@
+name: MTN
+channels:
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+  - ca-certificates=2023.12.12=h06a4308_0
+  - certifi=2022.12.7=py37h06a4308_0
+  - ld_impl_linux-64=2.38=h1181459_1
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=11.2.0=h1234567_1
+  - libgomp=11.2.0=h1234567_1
+  - libstdcxx-ng=11.2.0=h1234567_1
+  - ncurses=6.4=h6a678d5_0
+  - openssl=1.1.1w=h7f8727e_0
+  - pip=22.3.1=py37h06a4308_0
+  - python=3.7.9=h7579374_0
+  - readline=8.2=h5eee18b_0
+  - setuptools=65.6.3=py37h06a4308_0
+  - sqlite=3.41.2=h5eee18b_0
+  - tk=8.6.12=h1ccaba5_0
+  - wheel=0.38.4=py37h06a4308_0
+  - xz=5.4.6=h5eee18b_0
+  - zlib=1.2.13=h5eee18b_0
+  - pip:
+    - future==1.0.0
+    - joblib==1.3.2
+    - numpy==1.19.4
+    - opencv-python==4.4.0.46
+    - pillow==9.5.0
+    - scikit-learn==0.23.2
+    - scipy==1.7.3
+    - threadpoolctl==3.1.0
+    - torch==1.6.0+cu92
+    - torchvision==0.7.0+cu92
+    - tqdm==4.66.2
+prefix: /home2/ruthvik/anaconda3/envs/MTN

@@ -1,0 +1,13 @@
+model_opts:
+  model: Static
+  obs_input_type: [local_context]
+  apply_class_weights: True
+  normalize_boxes: True
+  generator: True
+net_opts:
+  backbone: vgg16
+exp_opts:
+  datasets: [iddp]
+  batch_size: [32]
+  epochs: [20]
+  lr: [0.000005]

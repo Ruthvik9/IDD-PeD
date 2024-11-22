@@ -1,0 +1,37 @@
+data_opts:
+  data_split_type: default
+  fstride: 1
+  min_track_size: 76
+  sample_type: all
+  seq_type: crossing
+  subset: default
+  test_seq_end: track_end
+  train_seq_end: track_end
+model_opts:
+  apply_class_weights: true
+  balance_data: true
+  dataset: iddp
+  enlarge_ratio: 1.5
+  fusion_method: sum
+  fusion_point: early
+  generator: true
+  model: I3D
+  normalize_boxes: true
+  obs_input_type:
+  - local_context
+  obs_length: 16
+  overlap: 0.6
+  time_to_event:
+  - 30
+  - 60
+net_opts:
+  backbone: vgg16
+  cell_type: gru
+  global_pooling: avg
+  num_hidden_units: 256
+  regularizer_val: 0.0001
+train_opts:
+  batch_size: 4
+  epochs: 40
+  learning_scheduler: null
+  lr: 5.0e-05

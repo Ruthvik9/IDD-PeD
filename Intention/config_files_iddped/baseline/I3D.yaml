@@ -1,0 +1,10 @@
+model_opts:
+  model: I3D
+  obs_input_type: [local_context]
+  apply_class_weights: True
+  generator: True
+exp_opts:
+  datasets: [iddp]
+  batch_size: [16]
+  epochs: [40]
+  lr: [5.0e-05]

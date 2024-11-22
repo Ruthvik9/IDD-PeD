@@ -1,0 +1,5 @@
+**/model.h5
+**/*.pth
+**/*.mp4
+**/*.MP4
+.git/objects/pack/tmp_pack_*

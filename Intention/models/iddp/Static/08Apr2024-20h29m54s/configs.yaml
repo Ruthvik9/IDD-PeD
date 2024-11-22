@@ -1,0 +1,21 @@
+model_opts:
+  apply_class_weights: true
+  balance_data: true
+  dataset: iddp
+  enlarge_ratio: 1.5
+  fusion_method: sum
+  fusion_point: early
+  generator: true
+  model: Static
+  normalize_boxes: true
+  obs_input_type:
+  - local_context
+  obs_length: 16
+  overlap: 0.6
+  time_to_event:
+  - 30
+  - 60
+train_opts:
+  batch_size: 32
+  epochs: 20
+  lr: 5.0e-06

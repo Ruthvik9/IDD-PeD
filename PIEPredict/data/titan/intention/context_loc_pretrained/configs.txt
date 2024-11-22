@@ -1,0 +1,6 @@
+####### Data options #######
+{'squarify_ratio': 0, 'height_rng': [0, inf], 'max_size_predict': 5, 'decoder_input_type': ['bbox'], 'encoder_input_type': [], 'output_type': ['intention_binary'], 'crop_mode': 'pad_resize', 'balance': True, 'sample_type': 'all', 'fstride': 1, 'seq_type': 'intention', 'seq_overlap_rate': 0.5, 'min_track_size': 0, 'max_size_observe': 5, 'crop_type': 'context', 'data_split_type': 'default'}
+####### Model config #######
+{'activation': 'tanh', 'sequence_length': 5, 'decoder_seq_length': 5, 'lstm_recurrent_dropout': 0.2, 'num_hidden': 128, 'lstm_dropout': 0.4, 'decoder_dense_output_size': 1, 'convlstm_kernel_size': 2, 'encoder_seq_length': 5, 'reg_value': 0.001, 'encoder_input_size': 4, 'convlstm_num_filters': 64, 'decoder_input_size': 4}
+####### Training config #######
+{'data_type': {'decoder_input_type': ['bbox'], 'encoder_input_type': [], 'output_type': ['intention_binary']}, 'batch_size': 128, 'metrics': ['accuracy'], 'overlap': 0.5, 'learning_scheduler_mode': 'plateau', 'epoch': 100, 'optimizer_params': {'clipvalue': 0.0, 'decay': 0.0, 'lr': 1e-05}, 'dataset': 'titan', 'model': 'convlstm_encdec', 'optimizer_type': 'rmsprop', 'loss': ['binary_crossentropy'], 'learning_scheduler_params': {'plateau_patience': 5, 'min_lr': 1e-07, 'step_drop_rate': 0.5, 'epochs_drop_rate': 20.0, 'exp_decay_param': 0.3, 'monitor_value': 'val_loss'}}

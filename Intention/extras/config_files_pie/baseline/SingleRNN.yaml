@@ -1,0 +1,17 @@
+model_opts:
+  model: SingleRNN
+  obs_input_type: [local_box, local_surround,  pose, box, speed]
+  apply_class_weights: True
+  normalize_boxes: True
+  generator: True
+net_opts:
+  num_hidden_units: 256
+  global_pooling: avg
+  regularizer_val: 0.0001
+  cell_type: gru
+  backbone: vgg16
+exp_opts:
+  datasets: [pie]
+  batch_size: [32]
+  epochs: [60]
+  lr: [0.00005]

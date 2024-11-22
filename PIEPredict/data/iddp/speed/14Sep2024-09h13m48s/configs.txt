@@ -1,0 +1,27 @@
+####### Model options #######
+normalize_bbox: True
+enc_input_type: ['obd_speed']
+observe_length: 15
+prediction_type: ['obd_speed']
+dec_input_type: []
+predict_length: 45
+track_overlap: 0.5
+
+####### Network config #######
+hidden_units: 256
+reg_value : 0.0001
+activation: softsign
+embed_size: 64
+embed_dropout: 0
+observe_length: 14
+predict_length : 45
+encoder_feature_size: 1
+decoder_feature_size: 1
+prediction_size: 1
+
+####### Training config #######
+batch_size: 64
+epochs: 60
+lr: 0.001
+loss: mse
+learning_scheduler: True
