@@ -12,8 +12,8 @@ bash remove_audio.sh
 4. From the root directory, run the following code to extract frames from videos:
 
 ```python
-from iddped_interface import iddped
-dataset = iddped()
+from iddped_interface_traj import IDDPedestrian
+dataset = IDDPedestrian()
 dataset.extract_and_save_images()
 ```
 5. This will extract and save frames as .png images in the `data/IDDPedestrian/images` directory
