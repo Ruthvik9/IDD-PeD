@@ -39,8 +39,8 @@ bash run_all_on_iddped.sh
 ### PIEPredict
 1. Setup environment:
 ```bash
-conda env create -f envs/piepred_env.yml
-conda activate piepred
+conda env create -f envs/PIEPredict_config.yml
+conda activate traj
 ```
 
 2. Run prediction:
@@ -52,8 +52,8 @@ python train_test.py 2
 ### MTN (Multiple Trajectory Network)
 1. Setup environment:
 ```bash
-conda env create -f envs/mtn_config.yml
-conda activate mtn
+conda env create -f envs/MTN_config.yml
+conda activate MTN
 ```
 
 2. Run prediction:
@@ -78,7 +78,7 @@ python main.py --config configs/iddped_config.yaml
 ### SGNet
 1. Setup environment:
 ```bash
-conda env create -f envs/sgnet_config.yml
+conda env create -f envs/SGNet_config.yml
 conda activate SGNet
 ```
 
