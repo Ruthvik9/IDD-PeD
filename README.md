@@ -1,4 +1,8 @@
 # IDDPeD: Pedestrian Intention and Trajectory Prediction in Unstructured Traffic Environments
+This repo contains the implementation of the baselines trained and evaluated on our IDD-PeD dataset.
+
+![image](https://github.com/user-attachments/assets/967755a1-7f4a-4d7d-945f-a845ff188254)
+
 
 ## Dataset Setup
 
