@@ -3,6 +3,12 @@ This repo contains the implementation of the baselines trained and evaluated on 
 
 ![image](https://github.com/user-attachments/assets/967755a1-7f4a-4d7d-945f-a845ff188254)
 
+Our dataset provides five types of annotations for pedestrians requiring the ego-vehicle’s attention -
+i) Spatial Annotations, which includes tracked bounding boxes for pedestrians.
+ii) Behavior Annotations, which are frame-level annotations that capture pedestrian behavior in unstructured environments.
+iii) Scene Annotations, capturing the environmental contextual information around the pedestrian.
+iv) Interaction Annotations, capturing how pedestrians and vehicles interact in rule-flexible unstructured environments.
+v) Location Annotations, providing location context for pedestrian movements.
 
 ## Dataset Setup
 
