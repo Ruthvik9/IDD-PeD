@@ -10,6 +10,8 @@ iii) Scene Annotations, capturing the environmental contextual information aroun
 iv) Interaction Annotations, capturing how pedestrians and vehicles interact in rule-flexible unstructured environments.
 v) Location Annotations, providing location context for pedestrian movements.
 
+![Jaywalking is a common occurence in our dataset, given the unstructured traffic environment](./jaywalking_iddp_2.gif)
+
 ## Dataset Setup
 
 1. Place the video files in the `data/IDDPedestrian/videos` folder
