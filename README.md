@@ -81,10 +81,16 @@ conda env create -f envs/bitrap_config.yml
 conda activate bitrap
 ```
 
-2. Run prediction:
+2. Testing:
 ```bash
-cd BiTraP
-python main.py --config configs/iddped_config.yaml
+cd BITRAP
+python tools/test.py --config_file configs/bitrap_np_IDDP.yml CKPT_DIR epoch_latest.pth
+```
+
+3. Training and testing:
+```bash
+cd BITRAP
+python tools/train.py --config_file configs/bitrap_np_IDDP.yml CKPT_DIR epoch_latest.pth
 ```
 
 ### SGNet
