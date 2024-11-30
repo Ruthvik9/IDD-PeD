@@ -39,8 +39,19 @@ conda env create -f envs/intention_config.yml
 conda activate baseline
 ```
 
+### Testing
+2. To re-run test on the saved model use:
+```bash
+python test_model.py <saved_files_path>
+```
+For example,
+```bash
+python test_model.py models/jaad/MASK_PCPA/xxxx/
+```
+
+
 ### Training and Testing
-Run the following script to train and test the intention prediction model:
+3. Run the following script to train and test the intention prediction model:
 ```bash
 cd Intention
 bash run_all_on_iddped.sh
