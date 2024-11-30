@@ -64,11 +64,20 @@ bash run_all_on_iddped.sh
 ```bash
 conda env create -f envs/PIEPredict_config.yml
 conda activate traj
+cd PIEPredict
 ```
 
-2. Run prediction:
+### Training and testing
+To train all models from scratch and evaluate them on the test data use this command:
 ```bash
-cd PIEPredict
+python train_test.py 1
+```
+This will train intention, speed and trajectory models separately and evaluate them on the test data.
+
+_Note: training intention model uses image data and requires 32GB RAM.
+
+### Testing:
+```bash
 python train_test.py 2
 ```
 
