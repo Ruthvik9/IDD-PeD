@@ -118,12 +118,15 @@ python tools/train.py --config_file configs/bitrap_np_IDDP.yml CKPT_DIR epoch_la
 ```bash
 conda env create -f envs/SGNet_config.yml
 conda activate SGNet
+cd SGNet
 ```
 
+### Training
 2. Run prediction:
 ```bash
 cd SGNet
 ```
+
 
 ## Citation
 If you find this work useful, please cite our paper:
