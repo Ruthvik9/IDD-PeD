@@ -90,6 +90,12 @@ IDDPeD/
 │   │   │   └── ...
 │   │   └── ...
 
+
+### Train-Test split
+The videos from ['gp_set_0001','gp_set_0002','gp_set_0004','gp_set_0006','gp_set_0007'] are used to train the models and the ones
+from ['gp_set_0003','gp_set_0005','gp_set_0008','gp_set_0009'] are used to test the models. We have used a roughly 70/30
+train/test split, with 3284 pedestrians in the training data and 1632 pedestrians in the testing data.
+
 Several methods require individual video frames for training and testing. Run the following code as a python script to extract frames from the videos:
 
 ```python
