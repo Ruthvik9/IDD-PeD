@@ -50,6 +50,18 @@ dataset.extract_and_save_images()
 ```
 This will extract and save frames as .png images in the `data/IDDPedestrian/images` directory
 
+### Checkpoints download
+Run the following command to download the checkpoints for the baseline models:
+```bash
+bash download_checkpoints.sh
+```
+Alternately, you can download the individual checkpoints from the following links - 
+https://mobility.iiit.ac.in/IDDPed_checkpoints/bitrap.zip
+https://mobility.iiit.ac.in/IDDPed_checkpoints/intention.zip
+https://mobility.iiit.ac.in/IDDPed_checkpoints/mtn.zip
+https://mobility.iiit.ac.in/IDDPed_checkpoints/piefull.zip
+https://mobility.iiit.ac.in/IDDPed_checkpoints/sgnet.zip
+
 ## Intention Prediction
 
 ### Setup
