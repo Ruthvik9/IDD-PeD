@@ -12,28 +12,29 @@ v) Location Annotations, providing location context for pedestrian movements.
 
 ![Jaywalking is a common occurence in our dataset, given the unstructured traffic environment](./jaywalking_iddp_2.gif)
 
-## Cloning the repo
+## Setting up the dataset
+
+### Cloning the repo
 1. Clone the IDD-PeD repo and navigate to the root directory:
 ```bash
 git clone https://github.com/Ruthvik9/DPJI.git
 cd DPJI
 ```
 
-## Dataset download
-
-2. Run the following command to download the videos of IDD-PeD:
+### Dataset download
+Run the following command to download the videos of IDD-PeD:
 ```bash
 bash download_videos.sh
 ```
 
-3. Several methods require individual video frames for training and testing. Run the following code as a python script to extract frames from the videos:
+Several methods require individual video frames for training and testing. Run the following code as a python script to extract frames from the videos:
 
 ```python
 from iddped_interface_traj import IDDPedestrian
 dataset = IDDPedestrian()
 dataset.extract_and_save_images()
 ```
-4. This will extract and save frames as .png images in the `data/IDDPedestrian/images` directory
+This will extract and save frames as .png images in the `data/IDDPedestrian/images` directory
 
 ## Intention Prediction
 
