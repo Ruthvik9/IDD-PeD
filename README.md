@@ -65,7 +65,8 @@ Run the following command to download the checkpoints for the baseline models:
 ```bash
 bash download_checkpoints.sh
 ```
-Alternately, you can download the individual checkpoints from the following links - 
+Alternately, you can download the individual checkpoints from the following links -
+<br />
 https://mobility.iiit.ac.in/IDDPed_checkpoints/bitrap.zip
 <br />
 https://mobility.iiit.ac.in/IDDPed_checkpoints/intention.zip
