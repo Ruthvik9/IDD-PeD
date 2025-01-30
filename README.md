@@ -15,7 +15,7 @@ v) Location Annotations, providing location context for pedestrian movements.
 ## Setting up the dataset
 
 ### Cloning the repo
-1. Clone the IDD-PeD repo and navigate to the root directory:
+Clone the IDD-PeD repo and navigate to the root directory:
 ```bash
 git clone https://github.com/Ruthvik9/DPJI.git
 cd DPJI
@@ -26,6 +26,20 @@ Run the following command to download the videos of IDD-PeD:
 ```bash
 bash download_videos.sh
 ```
+Alternately, you can download the dataset in parts from the links provided in the download_videos.sh script, namely -
+http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0001.tar
+http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0002.tar
+http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0003.tar
+http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0004.tar
+http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0005.tar
+http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0006.tar
+http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0007.tar
+http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0008.tar
+http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0009.tar
+
+The annotation files are included in this repo already, but can be downloaded from -
+http://cvit.iiit.ac.in/images/datasets/IDDPed/Annotations/annotations.tar
+http://cvit.iiit.ac.in/images/datasets/IDDPed/Annotations/annotations_vehicle.tar
 
 Several methods require individual video frames for training and testing. Run the following code as a python script to extract frames from the videos:
 
