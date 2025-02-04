@@ -225,3 +225,12 @@ If you find this work useful, please cite our paper:
 ```bibtex
 [Citation placeholder]
 ```
+
+Our code is based on the implementations from the following repos:
+[Pedestrian Intention Prediction](https://github.com/OSU-Haolin/Pedestrian_Crossing_Intention_Prediction)
+[PIE](https://github.com/aras62/PIEPredict)
+[MTN Trajectory](https://github.com/ericyinyzy/MTN_trajectory/blob/main/README.md)
+[BiTraP](https://github.com/umautobots/bidirection-trajectory-predicter)
+[SGNet](https://github.com/ChuhuaW/SGNet.pytorch)
+
+Please consider citing them and supporting their work.
