@@ -125,7 +125,7 @@ https://mobility.iiit.ac.in/IDDPed_checkpoints/sgnet.zip
 
 ## Intention Prediction
 
-### Setup
+#### Setup
 1. Create the conda environment using the provided configuration file and navigate to the directory:
 ```bash
 conda env create -f envs/intention_config.yml
@@ -133,8 +133,8 @@ conda activate baseline
 cd Intention
 ```
 
-### Testing
-2. To re-run test on the saved model use:
+#### Testing
+2. For testing using pre-trained weights, use:
 ```bash
 python test_model.py <saved_files_path>
 ```
@@ -144,7 +144,7 @@ python test_model.py models/jaad/MASK_PCPA/xxxx/
 ```
 
 
-### Training and Testing
+#### Training and Testing
 3. Run the following script to train and test the intention prediction model:
 ```bash
 bash run_all_on_iddped.sh
@@ -160,19 +160,19 @@ conda activate traj
 cd PIEPredict
 ```
 
+### Testing
+2. For testing using pre-trained weights, use:
+```bash
+python train_test.py 2
+```
+
 ### Training and testing
-To train all models from scratch and evaluate them on the test data use this command:
+3. To train all models from scratch and evaluate them on the test data use this command:
 ```bash
 python train_test.py 1
 ```
 This will train intention, speed and trajectory models separately and evaluate them on the test data.
-
-_Note: training intention model uses image data and requires 32GB RAM.
-
-### Testing:
-```bash
-python train_test.py 2
-```
+Note: Training intention model uses image data and requires 32GB CPU RAM.
 
 ### MTN (Multiple Trajectory Network)
 1. Setup environment and navigate to the directory:
@@ -182,9 +182,9 @@ conda activate MTN
 cd MTN
 ```
 
-2. Run prediction:
+2. For testing using pre-trained weights, use:
 ```bash
-python train.py
+python 
 ```
 
 ### BiTraP
@@ -195,7 +195,8 @@ conda activate bitrap
 cd BITRAP
 ```
 
-2. Testing:
+## Testing
+2. For testing using pre-trained weights, use:
 ```bash
 python tools/test.py --config_file configs/bitrap_np_IDDP.yml CKPT_DIR epoch_latest.pth
 ```
