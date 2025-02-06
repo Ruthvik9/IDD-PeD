@@ -21,7 +21,7 @@ git clone https://github.com/Ruthvik9/DPJI.git
 cd DPJI
 ```
 
-### Dataset download
+### Downloading the dataset
 Run the following command to download the videos of IDD-PeD:
 ```bash
 bash download_videos.sh
@@ -105,7 +105,7 @@ dataset.extract_and_save_images()
 ```
 This will extract and save frames as .png images in the `data/IDDPedestrian/images` directory
 
-### Checkpoints download
+### Downloading the checkpoints
 Run the following command to download the checkpoints for the baseline models:
 ```bash
 bash download_checkpoints.sh
@@ -145,7 +145,7 @@ python test_model.py models/jaad/MASK_PCPA/xxxx/
 
 
 #### Training and Testing
-3. Run the following script to train and test the intention prediction model:
+3. To train and test all the models:
 ```bash
 bash run_all_on_iddped.sh
 ```
@@ -153,21 +153,22 @@ bash run_all_on_iddped.sh
 ## Trajectory Prediction
 
 ### PIEPredict
-1. Setup environment and navigate to the directory:
+#### Setup
+1. Create the conda environment using the provided configuration file and navigate to the directory:
 ```bash
 conda env create -f envs/PIEPredict_config.yml
 conda activate traj
 cd PIEPredict
 ```
 
-### Testing
+#### Testing
 2. For testing using pre-trained weights, use:
 ```bash
 python train_test.py 2
 ```
 
-### Training and testing
-3. To train all models from scratch and evaluate them on the test data use this command:
+#### Training and testing
+3. To train and test the model:
 ```bash
 python train_test.py 1
 ```
@@ -175,49 +176,60 @@ This will train intention, speed and trajectory models separately and evaluate t
 Note: Training intention model uses image data and requires 32GB CPU RAM.
 
 ### MTN (Multiple Trajectory Network)
-1. Setup environment and navigate to the directory:
+#### Setup
+1. Create the conda environment using the provided configuration file and navigate to the directory:
 ```bash
 conda env create -f envs/MTN_config.yml
 conda activate MTN
 cd MTN
 ```
 
+#### Testing
 2. For testing using pre-trained weights, use:
 ```bash
-python 
+python
 ```
 
+#### Training and testing
+3. To train and test the model:
+
 ### BiTraP
-1. Setup environment and navigate to the directory:
+#### Setup
+1. Create the conda environment using the provided configuration file and navigate to the directory:
 ```bash
 conda env create -f envs/bitrap_config.yml
 conda activate bitrap
 cd BITRAP
 ```
 
-## Testing
+#### Testing
 2. For testing using pre-trained weights, use:
 ```bash
 python tools/test.py --config_file configs/bitrap_np_IDDP.yml CKPT_DIR epoch_latest.pth
 ```
 
-3. Training and testing:
+#### Training and testing:
+3. To train and test the model:
 ```bash
 python tools/train.py --config_file configs/bitrap_np_IDDP.yml CKPT_DIR epoch_latest.pth
 ```
 
 ### SGNet
-1. Setup environment and navigate to the directory:
+#### Setup
+1. Create the conda environment using the provided configuration file and navigate to the directory:
 ```bash
 conda env create -f envs/SGNet_config.yml
 conda activate SGNet
 cd SGNet
 ```
 
-### Training
-2. Run prediction:
+#### Testing
+2. For testing using pre-trained weights, use:
+   
+#### Training and testing
+3. To train and test the model:
 ```bash
-
+conda
 ```
 
 
