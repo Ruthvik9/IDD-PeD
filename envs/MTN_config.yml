@@ -1,6 +1,7 @@
-name: MTN
+name: MTN_env
 channels:
   - defaults
+  - pytorch
 dependencies:
   - _libgcc_mutex=0.1=main
   - _openmp_mutex=5.1=1_gnu
@@ -22,6 +23,9 @@ dependencies:
   - wheel=0.38.4=py37h06a4308_0
   - xz=5.4.6=h5eee18b_0
   - zlib=1.2.13=h5eee18b_0
+  - pytorch=1.6.0
+  - torchvision=0.7.0
+  - cudatoolkit=10.1
   - pip:
     - future==1.0.0
     - joblib==1.3.2
@@ -31,7 +35,5 @@ dependencies:
     - scikit-learn==0.23.2
     - scipy==1.7.3
     - threadpoolctl==3.1.0
-    - torch==1.6.0+cu92
-    - torchvision==0.7.0+cu92
     - tqdm==4.66.2
-prefix: /home2/ruthvik/anaconda3/envs/MTN
+prefix: /home2/ruthvik/anaconda3/envs/MTN_env

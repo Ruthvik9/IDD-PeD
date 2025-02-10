@@ -1,4 +1,4 @@
-name: bitrap
+name: bitrap_env
 channels:
   - pytorch
   - defaults
@@ -122,4 +122,4 @@ dependencies:
     - urllib3==1.26.20
     - wandb==0.15.12
     - zipp==3.6.0
-prefix: /home2/ruthvik/anaconda3/envs/bitrap
+prefix: /home2/ruthvik/anaconda3/envs/bitrap_env

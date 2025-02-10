@@ -1,4 +1,4 @@
-name: SGNet
+name: SGNet_env
 channels:
   - pytorch
   - defaults

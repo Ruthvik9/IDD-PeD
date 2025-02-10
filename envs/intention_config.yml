@@ -1,4 +1,4 @@
-name: baseline
+name: intention_env
 channels:
   - anaconda
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
@@ -137,4 +137,4 @@ dependencies:
     - urllib3==1.26.18
     - wandb==0.16.6
     - wget==3.2
-prefix: /home2/ruthvik/anaconda3/envs/baseline
+prefix: /home2/ruthvik/anaconda3/envs/intention_env
