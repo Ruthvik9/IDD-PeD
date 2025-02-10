@@ -53,42 +53,7 @@ http://cvit.iiit.ac.in/images/datasets/IDDPed/Annotations/annotations_vehicle.ta
 <br />
 
 Make sure the dataset is organized in the following structure - 
-IDDPeD/
-├── videos/
-│   ├── gopro/
-│   │   ├── gp_set_0001/
-│   │   │   ├── gp_set_0001_vid_0001.mp4
-│   │   │   ├── gp_set_0001_vid_0002.mp4
-│   │   │   └── ...
-│   │   ├── gp_set_0002/
-│   │   │   ├── gp_set_0002_vid_0001.mp4
-│   │   │   ├── gp_set_0002_vid_0002.mp4
-│   │   │   └── ...
-│   │   └── ...
-│
-├── annotations/
-│   ├── gopro/
-│   │   ├── gp_set_0001/
-│   │   │   ├── gp_set_0001_vid_0001.xml
-│   │   │   ├── gp_set_0001_vid_0002.xml
-│   │   │   └── ...
-│   │   ├── gp_set_0002/
-│   │   │   ├── gp_set_0002_vid_0001.xml
-│   │   │   ├── gp_set_0002_vid_0002.xml
-│   │   │   └── ...
-│   │   └── ...
-│
-├── annotations_vehicle/
-│   ├── gopro/
-│   │   ├── gp_set_0001/
-│   │   │   ├── gp_set_0001_vid_0001_obd.xml
-│   │   │   ├── gp_set_0001_vid_0002_obd.xml
-│   │   │   └── ...
-│   │   ├── gp_set_0002/
-│   │   │   ├── gp_set_0002_vid_0001_obd.xml
-│   │   │   ├── gp_set_0002_vid_0002_obd.xml
-│   │   │   └── ...
-│   │   └── ...
+![image](https://github.com/user-attachments/assets/aa8e79db-fafb-4e26-bd82-561f69959269)
 
 
 ### Train-Test split
