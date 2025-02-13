@@ -1699,7 +1699,6 @@ class IDDPedestrian():
 
             # Day time videos
             if params['time'] == 'day' and image_set == 'test':
-                print("I AM HERE FOR GOD'S SAKE")
                 vid_list = ['gp_set_0003_vid_0001','gp_set_0003_vid_0002','gp_set_0003_vid_0003','gp_set_0003_vid_0004','gp_set_0005_vid_0001',\
                             'gp_set_0005_vid_0002','gp_set_0005_vid_0003','gp_set_0009_vid_0001']
         except:

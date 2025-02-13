@@ -3,3 +3,8 @@
 **/*.mp4
 **/*.MP4
 .git/objects/pack/tmp_pack_*
+
+__pycache__/
+data/IDDPedestrian/images/
+iddped_interface_traj_new.py
+iddped_interface_traj_old.py
