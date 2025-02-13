@@ -53,6 +53,7 @@ http://cvit.iiit.ac.in/images/datasets/IDDPed/Annotations/annotations_vehicle.ta
 <br />
 
 Make sure the dataset is organized in the following structure - 
+<br />
 ![image](https://github.com/user-attachments/assets/aa8e79db-fafb-4e26-bd82-561f69959269)
 
 
