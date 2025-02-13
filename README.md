@@ -152,11 +152,14 @@ cd MTN
 #### Testing
 2. For testing using pre-trained weights, use:
 ```bash
-python
+python test_iddped.py # Change the checkpoint path in the test_iddped.py file
 ```
 
-#### Training and testing
-3. To train and test the model:
+#### Training
+3. To train the model:
+```bash
+python train_iddped.py
+```
 
 ### BiTraP
 #### Setup
@@ -173,8 +176,8 @@ cd BITRAP
 python tools/test.py --config_file configs/bitrap_np_IDDP.yml CKPT_DIR epoch_latest.pth
 ```
 
-#### Training and testing:
-3. To train and test the model:
+#### Training:
+3. To train the model:
 ```bash
 python tools/train.py --config_file configs/bitrap_np_IDDP.yml CKPT_DIR epoch_latest.pth
 ```
@@ -188,13 +191,21 @@ conda activate SGNet
 cd SGNet
 ```
 
+Create symlinks from the dataset path to ./data:
+```bash
+ln -s ./data/IDDPedestrian/ ./data/
+```
+
 #### Testing
 2. For testing using pre-trained weights, use:
-   
-#### Training and testing
-3. To train and test the model:
 ```bash
-conda
+python tools/iddp/eval_cvae.py --gpu $CUDA_VISIBLE_DEVICES --dataset IDDP --model SGNet_CVAE --checkpoint path/to/checkpoint
+```
+   
+#### Training
+3. To train the model:
+```bash
+python tools/iddp/train_cvae.py --gpu $CUDA_VISIBLE_DEVICES --dataset IDDP --model SGNet_CVAE
 ```
 
 
