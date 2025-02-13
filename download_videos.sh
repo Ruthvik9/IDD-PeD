@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# Create the IDDPedestrian directory
-mkdir -p IDDPedestrian
-cd IDDPedestrian
+cd data/IDDPedestrian
+
+# Create a directory to save the videos
+mkdir -p videos/gopro/
+cd videos/gopro/
 
 # Download all the videos
 echo "Downloading video tars..."
@@ -35,7 +37,4 @@ tar -xvf gp_set_0008.tar
 rm -r gp_set_0008.tar
 tar -xvf gp_set_0009.tar
 rm -r gp_set_0009.tar
-
-
-# Download the annotations
 
