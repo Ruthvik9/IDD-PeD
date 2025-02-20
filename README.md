@@ -102,6 +102,10 @@ Providing spatial context to situate pedestrians within the road environment:
 - `Near Crosswalk`
 - ...
 
+The complete list is as follows:
+![image](https://github.com/user-attachments/assets/c1c8df40-8f1f-4a04-b391-9fa2027bed23)
+
+
 ---
 
 ## 6. Additional Pedestrian Attributes
@@ -122,7 +126,7 @@ Further details for pedestrian tracks:
 | Spatial              | Bounding Boxes, Occlusion, Object Types (Pedestrian, Vehicle, Traffic Light, Crosswalk, Bus Station), 2D Pose                    |
 | Behavioral           | Crossing Behavior, Traffic Interaction, Pedestrian Activity, Attention Indicators, Social Dynamics, Stationary Behavior          |
 | Scene                | Intersection Type, Signalized Type, Road Type, Location Type, Motion Direction, Time of Day                                      |
-| Interaction          | Interaction Flag, Interaction Category                                                                                           |
+| Interaction          | Interaction Flag                                                                                        |
 | Location             | Near Divider, Side of the Road, Near Crosswalk                                                                                   |
 | Pedestrian Attributes| Age, Gender, Carrying Object, Crossing Motive, Crosswalk Usage, Crossing in front of ego-vehicle                                 |
 
