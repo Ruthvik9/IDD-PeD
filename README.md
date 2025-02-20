@@ -12,6 +12,125 @@ v) Location Annotations, providing location context for pedestrian movements.
 
 ![Jaywalking is a common occurence in our dataset, given the unstructured traffic environment](./jaywalking_iddp_2.gif)
 
+# Annotations in IDD-PeD Dataset
+
+The IDD-PeD dataset contains detailed annotations capturing spatial, behavioral, scene, interaction, and location information, specifically designed for understanding pedestrian behavior in unstructured traffic environments. The annotations are organized into the following categories:
+
+## 1. Spatial Annotations
+Bounding boxes and occlusion levels are annotated for pedestrians and relevant traffic objects using CVAT. Each bounding box is associated with an occlusion label:
+- **Occlusion Levels:**
+  - `0` - None (fully visible, <25% occluded)
+  - `1` - Partially occluded (25%-75% occluded)
+  - `2` - Fully occluded (>75% occluded)
+
+### Annotated Object Types:
+- **Pedestrian**
+- **Vehicle** – {`car`, `motorcycle`, `bicycle`, `auto`, `bus`, `cart`, `truck`, `other`}
+- **Traffic Light** – {`pedestrian`, `vehicle`}
+  - **State:** {`red`, `orange`, `green`}
+- **Bus Station**
+- **Crosswalk**
+
+Additionally, **2D Pose Annotations** for pedestrians are extracted using MMPose, consisting of 17 body keypoints.
+
+---
+
+## 2. Behavioral Annotations
+Frame-level attributes capturing pedestrian behavior and intentions in unstructured environments:
+
+### (i) **Crossing Behavior**
+- `CU` – Crossing Undesignated (not following rules)
+- `CFU` – Crossing Fast Undesignated
+- `CD` – Crossing Designated
+- `CFD` – Crossing Fast Designated
+- `CI` – Crossing Irrelevant (not in the path of the ego-vehicle)
+- `N/A` – Not applicable
+
+### (ii) **Traffic Interaction**
+- `WTT` – Weaving Through Traffic
+- `HG` – Hand Gesture
+- `Other` – Other forms of interaction
+- `N/A` – Not applicable
+
+### (iii) **Pedestrian Activity**
+- `Walking` – Walking along the road
+- `MS` – Moving Slowly (e.g., strolling)
+- `N/A` – Not applicable
+
+### (iv) **Attention Indicators**
+- `LOS` – Looking Over Shoulder (aware of ego-vehicle)
+- `FTT` – Facing Towards Traffic
+- `NL` – Not Looking (distracted)
+- `DB` – Distracted by Phone/Bag/Companion
+
+### (v) **Social Dynamics**
+- `GS` – Group Standing
+- `CFA` – Child with Adult
+- `AWC` – Adult with Child
+- `N/A` – Not applicable
+
+### (vi) **Stationary Behavior**
+- `Sitting`
+- `Standing`
+- `IWA` – Interacting with Agents (e.g., street vendors)
+- `Other`
+- `N/A`
+
+---
+
+## 3. Scene Annotations
+Environmental context attributes describing the surroundings:
+- **Intersection Type:** {`NI` (No Intersection), `U-turn`, `T-right`, `T-left`, `four-way`, `Y-intersection`}
+- **Signalized Type:** {`N/A`, `C` (Crosswalk), `S` (Traffic Signal), `CS` (Crosswalk + Signal)}
+- **Road Type:** {`main`, `secondary`, `street`, `lane`}
+- **Location Type:** {`urban`, `rural`, `commercial`, `residential`}
+- **Motion Direction:** {`OW` (One-way), `TW` (Two-way)}
+- **Time of Day:** {`day`, `night`}
+
+---
+
+## 4. Interaction Annotations
+Capturing pedestrian-vehicle interactions in unstructured environments:
+- **Interaction Flag:** `0` – No interaction, `1` – Interaction with ego-vehicle
+
+---
+
+## 5. Location Annotations
+Providing spatial context to situate pedestrians within the road environment:
+- `Near Divider`
+- `Side of the Road`
+- `Near Crosswalk`
+- ...
+
+---
+
+## 6. Additional Pedestrian Attributes
+Further details for pedestrian tracks:
+- **Crossing (in front of ego-vehicle):** {`no`: 0, `yes`: 1}
+- **Age:** {`child`, `teenager`, `adult`, `senior`}
+- **Gender:** {`male`, `female`, `default`}
+- **Carrying Object:** {`none`, `small`, `large`}
+- **Crossing Motive:** {`yes`: 1, `maybe`: 0.5, `no`: 0}
+- **Crosswalk Usage:** {`yes`, `no`, `partial`, `N/A`} # Indicating the extent to which pedestrians use crosswalks when crossing.
+
+---
+
+## Summary of Attribute Categories
+
+| Annotation Type      | Key Attributes                                                                                                                   |
+|----------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Spatial              | Bounding Boxes, Occlusion, Object Types (Pedestrian, Vehicle, Traffic Light, Crosswalk, Bus Station), 2D Pose                    |
+| Behavioral           | Crossing Behavior, Traffic Interaction, Pedestrian Activity, Attention Indicators, Social Dynamics, Stationary Behavior          |
+| Scene                | Intersection Type, Signalized Type, Road Type, Location Type, Motion Direction, Time of Day                                      |
+| Interaction          | Interaction Flag, Interaction Category                                                                                           |
+| Location             | Near Divider, Side of the Road, Near Crosswalk                                                                                   |
+| Pedestrian Attributes| Age, Gender, Carrying Object, Crossing Motive, Crosswalk Usage, Crossing in front of ego-vehicle                                 |
+
+---
+
+**Note:** Examples of each annotation type are provided in the supplementary video.
+
+
 ## Setting up the dataset
 
 ### Cloning the repo
