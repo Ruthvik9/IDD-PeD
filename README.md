@@ -17,7 +17,7 @@ v) Location Annotations, providing location context for pedestrian movements.
 The IDD-PeD dataset contains detailed annotations capturing spatial, behavioral, scene, interaction, and location information, specifically designed for understanding pedestrian behavior in unstructured traffic environments. The annotations are organized into the following categories:
 
 ## 1. Spatial Annotations
-Bounding boxes and occlusion levels are annotated for pedestrians and relevant traffic objects using CVAT. Each bounding box is associated with an occlusion label:
+Bounding boxes and occlusion levels are annotated for pedestrians and relevant traffic objects using \url{https://app.cvat.ai/}{CVAT}. Each bounding box is associated with an occlusion label:
 - **Occlusion Levels:**
   - `0` - None (fully visible, <25% occluded)
   - `1` - Partially occluded (25%-75% occluded)
