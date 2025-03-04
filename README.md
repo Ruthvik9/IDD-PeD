@@ -1,5 +1,10 @@
 # IDDPeD: Pedestrian Intention and Trajectory Prediction in Unstructured Traffic Environments
 This repo contains the implementation of the baselines trained and evaluated on our IDD-PeD dataset.
+<br />
+
+
+[Webpage](https://cvit.iiit.ac.in/research/projects/cvit-projects/iddped)
+<br />
 
 ![image](https://github.com/user-attachments/assets/967755a1-7f4a-4d7d-945f-a845ff188254)
 
@@ -126,7 +131,7 @@ Further details for pedestrian tracks:
 | Spatial              | Bounding Boxes, Occlusion, Object Types (Pedestrian, Vehicle, Traffic Light, Crosswalk, Bus Station), 2D Pose                    |
 | Behavioral           | Crossing Behavior, Traffic Interaction, Pedestrian Activity, Attention Indicators, Social Dynamics, Stationary Behavior          |
 | Scene                | Intersection Type, Signalized Type, Road Type, Location Type, Motion Direction, Time of Day                                      |
-| Interaction          | Interaction Flag                                                                                        |
+| Interaction          | Interaction Flag                                                                                                                 |
 | Location             | Near Divider, Side of the Road, Near Crosswalk                                                                                   |
 | Pedestrian Attributes| Age, Gender, Carrying Object, Crossing Motive, Crosswalk Usage, Crossing in front of ego-vehicle                                 |
 
