@@ -3,7 +3,7 @@ This repo contains the implementation of the baselines trained and evaluated on 
 <br />
 
 
-[Webpage](https://cvit.iiit.ac.in/research/projects/cvit-projects/iddped)
+The official webpage for this work can be found [here](https://cvit.iiit.ac.in/research/projects/cvit-projects/iddped)
 <br />
 
 ![image](https://github.com/user-attachments/assets/967755a1-7f4a-4d7d-945f-a845ff188254)
@@ -341,7 +341,18 @@ python tools/iddp/train_cvae.py --gpu $CUDA_VISIBLE_DEVICES --dataset IDDP --mod
 ## Citation
 If you find this work useful, please cite our paper:
 ```bibtex
-[Citation placeholder]
+@inproceedings{idd2025ped, 
+
+     author = {Ruthvik Bokkasam, Shankar Gangisetty, A. H. Abdul Hafez, C. V. Jawahar}, 
+
+     title = {Pedestrian Intention and Trajectory Prediction in Unstructured Traffic Using IDD-PeD}, 
+
+     book title = {ICRA}, 
+
+     publisher = {IEEE}, 
+
+     year = {2025}, 
+}
 ```
 
 Our code is based on the implementations from the following repos:
