@@ -41,45 +41,48 @@ Additionally, **2D Pose Annotations** for pedestrians are extracted using [MMPos
 ---
 
 ## 2. Behavioral Annotations
-Frame-level attributes capturing pedestrian behavior and intentions in unstructured environments:
+These are frame-level attributes capturing pedestrian behavior and intentions in unstructured environments. The attributes are designed to be hierarchical and independent with the most appropriate attribute from each category chosen to reprent the pedestrian's behavior, resulting in 6 behavioral attributes per pedestrian per annotated frame. Scripts are provided to visualize each of these behaviors in diverse scenarios.
+The possible attributes are:
 
-### (i) **Crossing Behavior**
+### (i) **Crossing Behavior** 
 - `CU` – Crossing Undesignated (not following rules)
 - `CFU` – Crossing Fast Undesignated
 - `CD` – Crossing Designated
 - `CFD` – Crossing Fast Designated
-- `CI` – Crossing Irrelevant (not in the path of the ego-vehicle)
-- `N/A` – Not applicable
+- `CI` – Crossing Irrelevant (pedestrian is crossing the road but not in the path of the ego-vehicle)
+- `N/A` – Not applicable (Pedestrian is not crossing the road)
 
 ### (ii) **Traffic Interaction**
-- `WTT` – Weaving Through Traffic
+(Not to be confused with the interaction annotations below)
+- `WTT` – Weaving Through Traffic (Common practice in crowded and rule-flexible environments where pedestrians navigate 'between' slow moving vehicles)
 - `HG` – Hand Gesture
-- `Other` – Other forms of interaction
-- `N/A` – Not applicable
+- `Other` – Other forms of interaction (Like a nod)
+- `N/A` – Not applicable (Pedestrian is not interacting with the traffic)
 
-### (iii) **Pedestrian Activity**
+### (iii) **Pedestrian Activity** 
+Records pedestrian behav-iors when they are *moving* along the *side of the road*
 - `Walking` – Walking along the road
-- `MS` – Moving Slowly (e.g., strolling)
-- `N/A` – Not applicable
+- `Sprinting` – Pedestrian sprints/moves fast
+- `N/A` – Not applicable (Pedestrian is not *moving* along the *side of the road*)
 
 ### (iv) **Attention Indicators**
-- `LOS` – Looking Over Shoulder (aware of ego-vehicle)
-- `FTT` – Facing Towards Traffic
-- `NL` – Not Looking (distracted)
-- `DB` – Distracted by Phone/Bag/Companion
+- `LOS` – Looking Over Shoulder (Looking over their shoulder towards incoming traffic.)
+- `FTT` – Facing Towards Traffic (Pedestrian is facing the traffic direction viewing the incoming vehicles.)
+- `NL` – Not Looking (Not looking in at the traffic flow.)
+- `DB` – Distracted Behavior (Takes precedence over the above since it captures a more vulnerable pedestrian)
 
 ### (v) **Social Dynamics**
-- `GS` – Group Standing
-- `CFA` – Child with Adult
+- `GS` – Group Setting
+- `CFA` – Child Following Adult (To identify children following an adult)
 - `AWC` – Adult with Child
-- `N/A` – Not applicable
+- `N/A` – Not applicable (The pedestrian is not a part of a group)
 
 ### (vi) **Stationary Behavior**
 - `Sitting`
 - `Standing`
 - `IWA` – Interacting with Agents (e.g., street vendors)
-- `Other`
-- `N/A`
+- `Other` (Other rarer forms of stationary behavior like sleeping, bending etc.)
+- `N/A` (The pedestrian is *not stationary*)
 
 ---
 
@@ -133,7 +136,7 @@ Further details for pedestrian tracks:
 | Scene                | Intersection Type, Signalized Type, Road Type, Location Type, Motion Direction, Time of Day                                      |
 | Interaction          | Interaction Flag                                                                                                                 |
 | Location             | Near Divider, Side of the Road, Near Crosswalk                                                                                   |
-| Pedestrian Attributes| Age, Gender, Carrying Object, Crossing Motive, Crosswalk Usage, Crossing in front of ego-vehicle                                 |
+| Pedestrian Attributes| Age, Gender, Carrying Object, Crossing Motive, Crosswalk Usage, Crossing in front of ego-vehicle etc.                            |
 
 ---
 
@@ -342,15 +345,10 @@ python tools/iddp/train_cvae.py --gpu $CUDA_VISIBLE_DEVICES --dataset IDDP --mod
 If you find this work useful, please cite our paper:
 ```bibtex
 @inproceedings{idd2025ped, 
-
      author = {Ruthvik Bokkasam, Shankar Gangisetty, A. H. Abdul Hafez, C. V. Jawahar}, 
-
      title = {Pedestrian Intention and Trajectory Prediction in Unstructured Traffic Using IDD-PeD}, 
-
      book title = {ICRA}, 
-
      publisher = {IEEE}, 
-
      year = {2025}, 
 }
 ```
