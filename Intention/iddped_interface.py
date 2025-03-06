@@ -1818,7 +1818,7 @@ class IDDPedestrian():
                     try:
                         start_idx = frame_ids.index(event_frame)
                     except ValueError:
-                        print(f"The frame {event_frame} not in range {frame_ids[0],frame_ids[-1]} for {pid}. Recheck annotations. Skipping.")
+                        # print(f"The frame {event_frame} not in range {frame_ids[0],frame_ids[-1]} for {pid}. Recheck annotations. Skipping.")
                         continue
                     
                     # From here on, we consider the frames post the event frame.
@@ -2015,21 +2015,21 @@ class IDDPedestrian():
                         try:
                             event_frame = pid_annots[pid]['attributes']['crossing_point']
                         except KeyError:
-                            print(f"Pedestrian {pid} doesn't have corresponding attributes. Skipping")
+                            # print(f"Pedestrian {pid} doesn't have corresponding attributes. Skipping")
                             continue
                     elif params[f'{image_set}_seq_end'] == 'track_end':
                         try:
                             event_frame = frame_ids[-1]
                             crossing_point = pid_annots[pid]['attributes']['crossing_point']
                         except KeyError:
-                            print(f"The frame {event_frame} not in range {frame_ids[0],frame_ids[-1]} for {pid}. Recheck annotations. Skipping.")
+                            # print(f"The frame {event_frame} not in range {frame_ids[0],frame_ids[-1]} for {pid}. Recheck annotations. Skipping.")
                             continue
                     
                     # Check if the event frame that we got above lies within a pedestrian track.
                     try:
                         end_idx = frame_ids.index(event_frame)
                     except ValueError:
-                        print(f"The frame {event_frame} not in range. Recheck annotations. Skipping.")
+                        # print(f"The frame {event_frame} not in range. Recheck annotations. Skipping.")
                         continue
                     
 

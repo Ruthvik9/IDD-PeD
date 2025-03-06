@@ -13,7 +13,7 @@ from action_predict import ActionPredict
 #from new_model import NewModel, HybridModel, MultiRNN3D, MultiRNN3D_MATT
 
 # for the IDDP dataset
-from PCIP.iddped_interface import IDDPedestrian
+from iddped_interface import IDDPedestrian
 import tensorflow as tf
 # tf.test.is_gpu_available()
 
@@ -32,7 +32,7 @@ for gpu in gpus:
 # path to JAAD dataset, please change to your local path
 path_jaad = "./data/JAAD"
 path_pie = "./data/pie"
-path_iddp = "./data/IDDPedestrian"
+path_iddp = "../data/IDDPedestrian"
 
 # config = tf.compat.v1.ConfigProto()
 # # config.gpu_options.per_process_gpu_memory_fraction=0.8
@@ -88,7 +88,7 @@ def run(config_file=None):
     """
     print(config_file)
     # Read default Config file
-    configs_default ='config_files_iddp/configs_default.yaml'
+    configs_default ='config_files_iddped/configs_default.yaml'
     with open(configs_default, 'r') as f:
         configs = yaml.safe_load(f)
 
