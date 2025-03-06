@@ -79,10 +79,10 @@ class IDDPedestrian():
         #                   'test': ['set03'],
         #                   'all': ['set01', 'set02', 'set03',
         #                           'set04', 'set05', 'set06']}
-        image_set_nums = {'train': ['gp_set_0001','gp_set_0002','gp_set_0004','gp_set_0006'],
-                          'val': ['gp_set_0003','gp_set_0005'],
-                          'test': ['gp_set_0003','gp_set_0005'],
-                          'all': ['gp_set_0001', 'gp_set_0002','gp_set_0003','gp_set_0004','gp_set_0005','gp_set_0006']}
+        image_set_nums = {'train': ['gp_set_0001','gp_set_0002','gp_set_0004','gp_set_0006','gp_set_0007'],
+                          'val': ['gp_set_0001','gp_set_0002','gp_set_0004','gp_set_0006','gp_set_0007'],
+                          'test': ['gp_set_0003','gp_set_0005','gp_set_0008','gp_set_0009'],
+                          'all': ['gp_set_0001', 'gp_set_0002','gp_set_0003','gp_set_0004','gp_set_0005','gp_set_0006','gp_set_0007','gp_set_0008','gp_set_0009']}
         return image_set_nums[image_set]
 
     def _get_image_path(self, sid, vid, fid):
@@ -538,7 +538,7 @@ class IDDPedestrian():
             print("############################################")
             print("Extracting and saving images for camera", cam)
             print("############################################")
-            set_folders = ['gp_set_0001','gp_set_0002','gp_set_0003'] # To only get the sets which have annotations.
+            set_folders = ['gp_set_0001','gp_set_0002','gp_set_0003','gp_set_0004','gp_set_0005','gp_set_0006','gp_set_0007','gp_set_0008','gp_set_0009']
             for set_id in set_folders:
                 print('Extracting frames from', set_id)
                 set_folder_path = join(self._videos_path,cam,set_id)
