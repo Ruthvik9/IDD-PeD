@@ -367,3 +367,5 @@ Our code is based on the implementations from the following repos:
 <br />
 
 Please consider citing them and supporting their work.
+
+**If you face any issues or have any queries regarding the work, kindly raise an issue on this repo and we'll get back to you as soon as possible.**
