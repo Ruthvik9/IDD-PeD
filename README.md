@@ -226,7 +226,7 @@ https://mobility.iiit.ac.in/IDDPed_checkpoints/sgnet.zip
 1. Create the conda environment using the provided configuration file and navigate to the directory:
 ```bash
 conda env create -f envs/intention_config.yml
-conda activate baseline
+conda activate intention_env
 cd Intention
 ```
 
@@ -254,7 +254,7 @@ bash run_all_on_iddped.sh
 1. Create the conda environment using the provided configuration file and navigate to the directory:
 ```bash
 conda env create -f envs/PIEPredict_config.yml
-conda activate traj
+conda activate pie_env
 cd PIEPredict
 # Load the cuda 9 module using your preferred way
 export IDDP_PATH='../data/IDDPedestrian/'
@@ -279,7 +279,7 @@ Note: Training intention model uses image data and requires 32GB CPU RAM.
 1. Create the conda environment using the provided configuration file and navigate to the directory:
 ```bash
 conda env create -f envs/MTN_config.yml
-conda activate MTN
+conda activate MTN_env
 cd MTN
 ```
 
@@ -300,7 +300,7 @@ python train_iddped.py
 1. Create the conda environment using the provided configuration file and navigate to the directory:
 ```bash
 conda env create -f envs/bitrap_config.yml
-conda activate bitrap
+conda activate bitrap_env
 cd BITRAP
 ```
 
@@ -323,6 +323,7 @@ python tools/train.py --config_file configs/bitrap_np_IDDP.yml CKPT_DIR epoch_la
 conda env create -f envs/SGNet_config.yml
 conda activate SGNet_env
 cd SGNet
+mkdir data # To create a symlink in the next step
 ```
 
 Create symlinks from the dataset path to ./data:
