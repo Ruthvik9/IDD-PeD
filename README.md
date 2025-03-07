@@ -328,7 +328,7 @@ mkdir data # To create a symlink in the next step
 
 Create symlinks from the dataset path to ./data:
 ```bash
-ln -s ./data/IDDPedestrian/ ./data/
+ln -s /path/to/IDDPedestrian/ ./data/
 ```
 
 #### Testing
