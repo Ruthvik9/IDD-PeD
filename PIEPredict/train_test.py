@@ -48,7 +48,7 @@ def train_predict(dataset='iddp',
                 #  'time': 'night',
                 # 'interaction': 'n',
                 # 'sig_type': 'n',
-                'occluded': 'n',
+                # 'occluded': 'n',
                  'min_track_size': 60,
                  'random_params': {'ratios': None,
                                  'val_data': True,
@@ -87,8 +87,8 @@ def train_predict(dataset='iddp',
     # traj_model_path = 'data/iddp/trajectory/loc_intent_speed_pretrained'
     # speed_model_path = 'data/iddp/speed/speed_pretrained'
 
-    traj_model_path = '/scratch/iddp/PIEPredict/data/iddp/trajectory/14Sep2024-08h22m03s'
-    speed_model_path = '/scratch/iddp/PIEPredict/data/iddp/speed/14Sep2024-09h13m48s'
+    traj_model_path = 'data/iddp/trajectory/14Sep2024-08h22m03s'
+    speed_model_path = 'data/iddp/speed/14Sep2024-09h13m48s'
 
     if train_test < 2:
         beh_seq_val = imdb.generate_data_trajectory_sequence('val', **data_opts)
