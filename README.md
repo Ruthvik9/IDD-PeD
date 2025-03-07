@@ -321,7 +321,7 @@ python tools/train.py --config_file configs/bitrap_np_IDDP.yml CKPT_DIR epoch_la
 1. Create the conda environment using the provided configuration file and navigate to the directory:
 ```bash
 conda env create -f envs/SGNet_config.yml
-conda activate SGNet
+conda activate SGNet_env
 cd SGNet
 ```
 
