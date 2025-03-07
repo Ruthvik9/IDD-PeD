@@ -256,6 +256,8 @@ bash run_all_on_iddped.sh
 conda env create -f envs/PIEPredict_config.yml
 conda activate traj
 cd PIEPredict
+# Load the cuda 9 module using your preferred way
+export IDDP_PATH='../data/IDDPedestrian/'
 ```
 
 #### Testing
