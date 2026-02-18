@@ -158,29 +158,29 @@ Run the following command to download the videos of IDD-PeD:
 bash download_videos.sh
 ```
 Alternately, you can download the dataset in parts from the links provided in the download_videos.sh script, namely -
-http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0001.tar
+https://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0001.tar
 <br />
-http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0002.tar
+https://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0002.tar
 <br />
-http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0003.tar
+https://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0003.tar
 <br />
-http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0004.tar
+https://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0004.tar
 <br />
-http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0005.tar
+https://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0005.tar
 <br />
-http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0006.tar
+https://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0006.tar
 <br />
-http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0007.tar
+https://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0007.tar
 <br />
-http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0008.tar
+https://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0008.tar
 <br />
-http://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0009.tar
+https://cvit.iiit.ac.in/images/datasets/IDDPed/Videos/gp_set_0009.tar
 <br />
 
 The annotation files are included in this repo already, but can be downloaded from -
-http://cvit.iiit.ac.in/images/datasets/IDDPed/Annotations/annotations.tar
+https://cvit.iiit.ac.in/images/datasets/IDDPed/Annotations/annotations.tar
 <br />
-http://cvit.iiit.ac.in/images/datasets/IDDPed/Annotations/annotations_vehicle.tar
+https://cvit.iiit.ac.in/images/datasets/IDDPed/Annotations/annotations_vehicle.tar
 <br />
 
 Make sure the dataset is organized in the following structure - 
